@@ -1,0 +1,178 @@
+{
+    "mod_name": "epic_artifacts",
+    "version": "1.0",
+    "description": "Добавляет мощные артефакты с уникальными способностями",
+    "author": "Text War Legacy Team",
+    "dependencies": [],
+
+    "shop_items": [
+        {
+            "id": "thunder_hammer",
+            "name": "⚡ Молот Грома",
+            "description": "Мощный молот, который имеет шанс оглушить врага на 1 ход",
+            "price": 800,
+            "type": "weapon",
+            "effects": {
+                "damage": 15,
+                "special_ability": "stun_chance",
+                "stun_chance": 0.3,
+                "stun_duration": 1
+            },
+            "requirements": {
+                "level": 10,
+                "coins_required": 2000
+            },
+            "purchase_limit": {
+                "max_purchases": 1,
+                "player_specific": true
+            }
+        },
+        {
+            "id": "phoenix_armor",
+            "name": "🔥 Доспех Феникса",
+            "description": "Доспех, который воскрешает игрока 1 раз за битву с 50% HP",
+            "price": 1200,
+            "type": "armor",
+            "effects": {
+                "shield_hp": 35,
+                "special_ability": "auto_resurrect",
+                "resurrect_chance": 1.0,
+                "resurrect_health": 0.5,
+                "uses_per_battle": 1
+            },
+            "requirements": {
+                "level": 15
+            },
+            "purchase_limit": {
+                "max_purchases": 1,
+                "player_specific": true
+            }
+        },
+        {
+            "id": "vampire_amulet",
+            "name": "🦇 Амулет Вампира",
+            "description": "Вампиризм - 25% нанесенного урона восстанавливает здоровье",
+            "price": 600,
+            "type": "special",
+            "effects": {
+                "special_ability": "vampirism",
+                "vampirism_ratio": 0.25,
+                "health_bonus": 20
+            },
+            "requirements": {
+                "level": 8
+            },
+            "purchase_limit": {
+                "max_purchases": 1,
+                "player_specific": true
+            }
+        },
+        {
+            "id": "time_medallion",
+            "name": "⏰ Медальон Времени",
+            "description": "Дает дополнительный ход каждый 3-й раунд",
+            "price": 1000,
+            "type": "special",
+            "effects": {
+                "special_ability": "extra_turn",
+                "extra_turn_frequency": 3,
+                "speed_bonus": 10
+            },
+            "requirements": {
+                "level": 12
+            },
+            "purchase_limit": {
+                "max_purchases": 1,
+                "player_specific": true
+            }
+        },
+        {
+            "id": "elemental_orb",
+            "name": "🌀 Сфера Стихий",
+            "description": "Случайный элементальный урон (огонь/лед/природа) каждый ход",
+            "price": 900,
+            "type": "special",
+            "effects": {
+                "special_ability": "random_element",
+                "elemental_damage_bonus": 10,
+                "damage": 8
+            },
+            "requirements": {
+                "level": 10
+            },
+            "purchase_limit": {
+                "max_purchases": 1,
+                "player_specific": true
+            }
+        },
+        {
+            "id": "mimic_chest",
+            "name": "🎁 Сундук-Мимик",
+            "description": "При использовании: 50% шанс получить 500 монет или потерять 200",
+            "price": 300,
+            "type": "special",
+            "effects": {
+                "special_ability": "gamble_chest",
+                "win_chance": 0.5,
+                "win_reward": 500,
+                "lose_penalty": 200,
+                "consumable": true
+            },
+            "requirements": {
+                "level": 5
+            },
+            "purchase_limit": {
+                "max_purchases": -1,
+                "player_specific": false
+            }
+        }
+    ],
+
+    "achievements": [
+        {
+            "id": "artifact_collector",
+            "name": "🏺 Коллекционер Артефактов",
+            "description": "Соберите все 6 эпических артефактов",
+            "tier": "platinum",
+            "condition": "epic_artifacts_collected",
+            "target_value": 6,
+            "reward_coins": 1500,
+            "reward_xp": 2000,
+            "hidden": false
+        },
+        {
+            "id": "thunder_master",
+            "name": "🌩️ Повелитель Грома",
+            "description": "Оглушите 20 врагов с помощью Молота Грома",
+            "tier": "gold",
+            "condition": "enemies_stunned",
+            "target_value": 20,
+            "reward_coins": 800,
+            "reward_xp": 1000,
+            "hidden": true
+        },
+        {
+            "id": "phoenix_reborn",
+            "name": "🔥 Возрождение Феникса",
+            "description": "Воскресните 5 раз с помощью Доспеха Феникса",
+            "tier": "gold",
+            "condition": "phoenix_resurrections",
+            "target_value": 5,
+            "reward_coins": 700,
+            "reward_xp": 1200,
+            "hidden": true
+        }
+    ],
+
+    "config": {
+        "balance": {
+            "artifact_power_level": "high",
+            "special_ability_cooldown": 2,
+            "unique_effects": true
+        },
+        "ui": {
+            "special_effects": true,
+            "ability_descriptions": true
+        }
+    }
+}

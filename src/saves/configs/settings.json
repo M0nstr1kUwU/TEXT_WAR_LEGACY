@@ -1,0 +1,28 @@
+{
+  "logging": {
+    "warning": true,
+    "error": true,
+    "info": true,
+    "debug": true
+  },
+  "game": {
+    "difficulty": "hard",
+    "auto_save": true,
+    "language": "russian"
+  },
+  "ai": {
+    "enemy_ai_difficulty": "adaptive",
+    "ai_learning": true,
+    "adaptive_behavior": true,
+    "ai_aggression_level": 0.5,
+    "ai_prediction_accuracy": 0.7,
+    "ai_memory_size": 100,
+    "enhanced_ai_enabled": true,
+    "special_abilities_enabled": true,
+    "boss_ai_intelligence": 0.8
+  },
+  "developer": {
+    "show_debug_info": true,
+    "enable_cheats": true
+  }
+}

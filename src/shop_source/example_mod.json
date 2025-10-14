@@ -1,0 +1,47 @@
+{
+    "mod_name": "example_mod",
+    "version": "1.0",
+    "description": "Пример мода для демонстрации возможностей",
+    "author": "Text War Legacy Team",
+
+    "shop_items": [
+        {
+            "id": "magic_sword",
+            "name": "🔮 Магический меч",
+            "description": "+8 к урону, требует уровень 5",
+            "price": 200,
+            "type": "weapon",
+            "effects": {"damage": 8},
+            "requirements": {"level": 5},
+            "purchase_limit": {
+                "max_purchases": 1,
+                "player_specific": true
+            }
+        },
+        {
+            "id": "dragon_armor",
+            "name": "🐉 Доспех дракона",
+            "description": "+25 к защите, требует уровень 8",
+            "price": 350,
+            "type": "armor",
+            "effects": {"shield_hp": 25},
+            "requirements": {"level": 8},
+            "purchase_limit": {
+                "max_purchases": 1,
+                "player_specific": true
+            }
+        },
+        {
+            "id": "unlimited_potion",
+            "name": "♾️ Бесконечное зелье",
+            "description": "Можно покупать много раз",
+            "price": 50,
+            "type": "potion",
+            "effects": {"health": 10},
+            "purchase_limit": {
+                "max_purchases": -1,
+                "player_specific": false
+            }
+        }
+    ]
+}

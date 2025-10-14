@@ -1,0 +1,18 @@
+{
+  "mod_name": "shop_items_example",
+  "shop_items": [
+    {
+      "id": "magic_sword",
+      "name": "🔮 Магический меч",
+      "description": "+8 к урону, требует уровень 5",
+      "price": 200,
+      "type": "weapon",
+      "effects": {"damage": 8},
+      "requirements": {"level": 5},
+      "purchase_limit": {
+        "max_purchases": 1,
+        "player_specific": true
+      }
+    }
+  ]
+}

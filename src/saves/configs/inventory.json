@@ -1,0 +1,64 @@
+{
+  "items": [
+    {
+      "id": "extended_achievements_extended_achievements_achievement_tracker",
+      "name": "📊 Трекер достижений",
+      "description": "Показывает прогресс по всем достижениям",
+      "category": "special",
+      "effects": {
+        "achievement_visibility": true
+      },
+      "quantity": 1,
+      "equipped": true
+    },
+    {
+      "id": "epic_artifacts_epic_artifacts_vampire_amulet",
+      "name": "🦇 Амулет Вампира",
+      "description": "Вампиризм - 25% нанесенного урона восстанавливает здоровье",
+      "category": "special",
+      "effects": {
+        "special_ability": "vampirism",
+        "vampirism_ratio": 0.25,
+        "health_bonus": 20
+      },
+      "quantity": 1,
+      "equipped": true
+    },
+    {
+      "id": "epic_artifacts_epic_artifacts_elemental_orb",
+      "name": "🌀 Сфера Стихий",
+      "description": "Случайный элементальный урон (огонь/лед/природа) каждый ход",
+      "category": "special",
+      "effects": {
+        "special_ability": "random_element",
+        "elemental_damage_bonus": 10,
+        "damage": 8
+      },
+      "quantity": 1,
+      "equipped": false
+    },
+    {
+      "id": "steel_shield",
+      "name": "🛡️ Стальной щит",
+      "description": "+15 к защите",
+      "category": "armor",
+      "effects": {
+        "shield_hp": 15
+      },
+      "quantity": 1,
+      "equipped": true
+    },
+    {
+      "id": "extended_achievements_extended_achievements_lucky_charm",
+      "name": "🔮 Счастливый талисман",
+      "description": "Увеличивает шанс найти секретные достижения на 15%",
+      "category": "special",
+      "effects": {
+        "luck_bonus": 15,
+        "secret_discovery_chance": 0.15
+      },
+      "quantity": 1,
+      "equipped": false
+    }
+  ]
+}

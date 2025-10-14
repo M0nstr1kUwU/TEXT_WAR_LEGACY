@@ -1,0 +1,44 @@
+{
+  "editor": {
+    "font_family": "Consolas",
+    "font_size": 12,
+    "theme": "dark",
+    "line_numbers": true,
+    "word_wrap": false,
+    "auto_indent": true,
+    "tab_width": 4,
+    "use_spaces": true
+  },
+  "window": {
+    "width": 1920,
+    "height": 1017,
+    "maximized": true,
+    "window_state": null,
+    "splitter_sizes": [
+      569,
+      1329
+    ]
+  },
+  "projects": {
+    "recent_projects": [
+      "C:/Users/User/PycharmProjects/OOP/TEXT_WAR_LEGACY/src/saves/mods"
+    ],
+    "last_project": "C:/Users/User/PycharmProjects/OOP/TEXT_WAR_LEGACY/src/saves/mods",
+    "auto_load_last": true
+  },
+  "code_completion": {
+    "enabled": true,
+    "auto_trigger": true,
+    "case_sensitive": false
+  },
+  "syntax_highlighting": {
+    "enabled": true,
+    "highlight_current_line": true,
+    "highlight_matching_braces": true
+  },
+  "mod_development": {
+    "auto_validate": true,
+    "show_hook_documentation": true,
+    "template_language": "russian"
+  }
+}

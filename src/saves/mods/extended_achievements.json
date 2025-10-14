@@ -1,0 +1,225 @@
+{
+    "mod_name": "extended_achievements",
+    "version": "1.1",
+    "description": "Добавляет дополнительные достижения и трекер прогресса",
+    "author": "Text War Legacy Team",
+
+    "shop_items": [
+        {
+            "id": "achievement_tracker",
+            "name": "📊 Трекер достижений",
+            "description": "Показывает прогресс по всем достижениям",
+            "price": 250,
+            "type": "special",
+            "effects": {
+                "achievement_visibility": true
+            },
+            "purchase_limit": {
+                "max_purchases": 1,
+                "player_specific": true
+            }
+        },
+        {
+            "id": "lucky_charm",
+            "name": "🔮 Счастливый талисман",
+            "description": "Увеличивает шанс найти секретные достижения на 15%",
+            "price": 500,
+            "type": "special",
+            "effects": {
+                "luck_bonus": 15,
+                "secret_discovery_chance": 0.15
+            },
+            "purchase_limit": {
+                "max_purchases": 1,
+                "player_specific": true
+            }
+        },
+        {
+            "id": "combo_gloves",
+            "name": "🥊 Перчатки комбо",
+            "description": "Увеличивает длину комбо-серий на 2 хода",
+            "price": 400,
+            "type": "special",
+            "effects": {
+                "combo_length_bonus": 2,
+                "damage": 5
+            },
+            "purchase_limit": {
+                "max_purchases": 1,
+                "player_specific": true
+            }
+        },
+        {
+            "id": "expert_potion_kit",
+            "name": "🧪 Набор эксперта зелий",
+            "description": "Увеличивает эффективность зелий на 30%",
+            "price": 600,
+            "type": "special",
+            "effects": {
+                "potion_effectiveness": 1.3,
+                "health_bonus": 10
+            },
+            "purchase_limit": {
+                "max_purchases": 1,
+                "player_specific": true
+            }
+        }
+    ],
+
+    "achievements": [
+        {
+            "id": "combo_master",
+            "name": "🔥 Мастер комбо",
+            "description": "Выполните комбо из 10 ходов подряд",
+            "tier": "silver",
+            "condition": "max_combo_streak",
+            "target_value": 10,
+            "reward_coins": 300,
+            "reward_xp": 500,
+            "hidden": false
+        },
+        {
+            "id": "speedrunner",
+            "name": "⚡ Спидраннер",
+            "description": "Пройдите битву менее чем за 5 ходов",
+            "tier": "gold",
+            "condition": "fastest_battle",
+            "target_value": 5,
+            "reward_coins": 600,
+            "reward_xp": 800,
+            "hidden": true
+        },
+        {
+            "id": "lightning_warrior",
+            "name": "🌩️ Воин молнии",
+            "description": "Нанесите 1000 урона за одну битву",
+            "tier": "platinum",
+            "condition": "max_damage_single_battle",
+            "target_value": 1000,
+            "reward_coins": 1000,
+            "reward_xp": 1500,
+            "hidden": false
+        },
+        {
+            "id": "tactical_genius",
+            "name": "🎯 Тактический гений",
+            "description": "Победите босса без получения урона",
+            "tier": "platinum",
+            "condition": "boss_no_damage",
+            "target_value": 1,
+            "reward_coins": 1200,
+            "reward_xp": 2000,
+            "hidden": true
+        },
+        {
+            "id": "risk_taker",
+            "name": "🎲 Рисковый парень",
+            "description": "Выиграйте 5 раз в азартные игры",
+            "tier": "bronze",
+            "condition": "gambling_wins",
+            "target_value": 5,
+            "reward_coins": 200,
+            "reward_xp": 300,
+            "hidden": false
+        },
+        {
+            "id": "potion_master",
+            "name": "🧪 Мастер зелий",
+            "description": "Используйте 50 зелий",
+            "tier": "silver",
+            "condition": "potions_used",
+            "target_value": 50,
+            "reward_coins": 400,
+            "reward_xp": 600,
+            "hidden": false
+        },
+        {
+            "id": "elemental_master",
+            "name": "🌊 Повелитель стихий",
+            "description": "Используйте все 4 основные стихии",
+            "tier": "gold",
+            "condition": "elements_used",
+            "target_value": 4,
+            "reward_coins": 700,
+            "reward_xp": 1000,
+            "hidden": true
+        },
+        {
+            "id": "wise_investor",
+            "name": "📈 Мудрый инвестор",
+            "description": "Накопите 10000 монет",
+            "tier": "gold",
+            "condition": "total_coins_earned",
+            "target_value": 10000,
+            "reward_coins": 1500,
+            "reward_xp": 2000,
+            "hidden": false
+        },
+        {
+            "id": "shop_magnate",
+            "name": "🏪 Магазинный магнат",
+            "description": "Купите 50 предметов в магазине",
+            "tier": "silver",
+            "condition": "items_purchased",
+            "target_value": 50,
+            "reward_coins": 500,
+            "reward_xp": 800,
+            "hidden": false
+        },
+        {
+            "id": "roleplayer",
+            "name": "🎭 Ролевик",
+            "description": "Испытайте все классы персонажей",
+            "tier": "platinum",
+            "condition": "classes_used",
+            "target_value": 7,
+            "reward_coins": 2000,
+            "reward_xp": 3000,
+            "hidden": true
+        },
+        {
+            "id": "completionist",
+            "name": "🏆 Комплиционист",
+            "description": "Разблокируйте 50 достижений",
+            "tier": "platinum",
+            "condition": "achievements_unlocked",
+            "target_value": 50,
+            "reward_coins": 5000,
+            "reward_xp": 5000,
+            "hidden": false
+        },
+        {
+            "id": "easter_egg_hunter",
+            "name": "🥚 Охотник за пасхалками",
+            "description": "Найдите 10 секретных достижений",
+            "tier": "gold",
+            "condition": "hidden_achievements",
+            "target_value": 10,
+            "reward_coins": 1000,
+            "reward_xp": 1500,
+            "hidden": true
+        },
+        {
+            "id": "lucky_charm_owner",
+            "name": "🍀 Счастливчик",
+            "description": "Активируйте 5 случайных бонусов",
+            "tier": "silver",
+            "condition": "random_bonuses",
+            "target_value": 5,
+            "reward_coins": 400,
+            "reward_xp": 600,
+            "hidden": false
+        },
+        {
+            "id": "dodge_master",
+            "name": "💨 Мастер уклонений",
+            "description": "Уклонитесь от 20 атак",
+            "tier": "gold",
+            "condition": "perfect_defenses",
+            "target_value": 20,
+            "reward_coins": 800,
+            "reward_xp": 1200,
+            "hidden": true
+        }
+    ]
+}

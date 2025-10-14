@@ -1,0 +1,58 @@
+{
+  "name": "M0nstr1k",
+  "health": 68,
+  "health_max": 343,
+  "health_repair": 2,
+  "damage": 44,
+  "shield_hp": 15,
+  "potions": [],
+  "coin": 1097,
+  "level": 13,
+  "experience": 8373,
+  "player_stats": {
+    "battles_won": 0,
+    "battles_lost": 0,
+    "total_coins_earned": 0,
+    "total_damage_dealt": 0,
+    "total_healing_done": 0,
+    "max_damage_single_battle": 0,
+    "max_health": 68,
+    "items_purchased": 0,
+    "mystery_box_bonus": false,
+    "boss_no_damage": false,
+    "classes_used": [
+      "mage"
+    ],
+    "abilities_used": [],
+    "elements_used": [],
+    "elemental_damage": {}
+  },
+  "has_achievement_visibility": true,
+  "achievement_visibility": true,
+  "element": "fire",
+  "elemental_resistance": 1.0,
+  "player_class": "mage",
+  "mana": 97,
+  "mana_max": 97,
+  "skill_points": 1,
+  "unlocked_abilities": [
+    "🔥 Огненный шар",
+    "❄️ Ледяная броня"
+  ],
+  "skill_tree": {
+    "unlocked_nodes": [
+      "health_boost",
+      "health_boost",
+      "health_boost",
+      "health_boost",
+      "health_boost"
+    ],
+    "skill_points": 0,
+    "nodes_state": {
+      "health_boost": 5,
+      "damage_boost": 0,
+      "elemental_mastery": 0,
+      "spell_power": 0
+    }
+  }
+}

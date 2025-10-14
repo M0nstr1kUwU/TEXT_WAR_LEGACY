@@ -1,0 +1,33 @@
+{
+  "unlocked_achievements": [
+    "first_coin",
+    "first_purchase",
+    "first_class",
+    "tank",
+    "explorer",
+    "first_victory",
+    "rich"
+  ],
+  "player_stats": {
+    "battles_won": 0,
+    "battles_lost": 0,
+    "total_coins_earned": 0,
+    "total_damage_dealt": 0,
+    "total_healing_done": 0,
+    "max_damage_single_battle": 0,
+    "max_health": 343,
+    "items_purchased": 0,
+    "mystery_box_bonus": false,
+    "boss_no_damage": false,
+    "classes_used": [
+      "mage"
+    ],
+    "abilities_used": [],
+    "elements_used": [],
+    "elemental_damage": {},
+    "menus_visited": 35,
+    "unique_items_collected": 0,
+    "perfect_defenses": 0,
+    "dodge_streak": 0
+  }
+}

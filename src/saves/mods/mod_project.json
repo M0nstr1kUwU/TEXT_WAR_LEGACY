@@ -1,0 +1,15 @@
+{
+  "name": "mods",
+  "path": "C:\\Users\\User\\PycharmProjects\\OOP\\TEXT_WAR_LEGACY\\src\\saves\\mods",
+  "type": "mod",
+  "version": "1.0.0",
+  "author": "M0nstr1k",
+  "description": "Test Projest!",
+  "created_date": "",
+  "files": [
+    "example_mod.py",
+    "epic_artifacts.py",
+    "extended_achievements.py"
+  ],
+  "dependencies": []
+}
